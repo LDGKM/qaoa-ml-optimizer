@@ -1,0 +1,15 @@
+\begin{tabular}{lcccccc}
+\toprule
+ & \multicolumn{3}{c}{Ratio sans optimisation} & \multicolumn{3}{c}{Évaluations du circuit} \\
+\cmidrule(lr){2-4}\cmidrule(lr){5-7}
+Stratégie & $p=1$ & $p=2$ & $p=3$ & $p=1$ & $p=2$ & $p=3$ \\
+\midrule
+Aléatoire & 0.626 & 0.603 & 0.597 & 42 & 138 & 318 \\
+Rampe linéaire & 0.780 & 0.803 & 0.834 & 23 & 66 & 126 \\
+Moyenne (concentration) & 0.796 & 0.864 & 0.902 & 23 & 56 & 103 \\
+\midrule
+ML : k plus proches voisins & 0.805 & \textbf{0.879} & 0.921 & \textbf{17} & \textbf{40} & \textbf{70} \\
+ML : forêt aléatoire & \textbf{0.806} & 0.879 & \textbf{0.923} & 20 & 48 & 87 \\
+ML : réseau de neurones & 0.785 & 0.863 & 0.887 & 24 & 54 & 103 \\
+\bottomrule
+\end{tabular}
